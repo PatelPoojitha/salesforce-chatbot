@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style type='text/css'>
+  <style type="text/css">
     .embedded-messaging .embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton {
       background-color: #0374F4 !important;
       background: linear-gradient(90deg, #0374F4 0%, #19BEF8 100%) !important;
@@ -16,29 +16,29 @@
 <body>
   <h3>Chatbot Test Page</h3>
 
-  <script type='text/javascript'>
+  <script type="text/javascript">
     function initEmbeddedMessaging() {
       try {
-        embeddedservice_bootstrap.settings.language = 'en_US';
+        embeddedservice_bootstrap.settings.language = "en_US";
 
         embeddedservice_bootstrap.init(
-          '00D3J0000001Jg7',
-          'Support_Enhance',
-          'https://callrevu--partial.sandbox.my.site.com/ESWSupportEnhance1739864367682',
+          "00DcW000004YXIb",   // ✅ CORRECT Org ID
+          "Support_Enhance",
+          "https://callrevu--partial.sandbox.my.site.com/ESW_Support_Enhance_17418723541891",  // ✅ CORRECT endpoint
           {
-            scrt2URL: 'https://callrevu--partial.sandbox.my.salesforce-scrt.com'
+            scrt2URL: "https://callrevu--partial.sandbox.my.salesforce-scrt.com"
           }
         );
       } catch (err) {
-        console.error('Error loading Embedded Messaging: ', err);
+        console.error("Error loading Embedded Messaging: ", err);
       }
-    };
+    }
   </script>
 
   <script
-    type='text/javascript'
-    src='https://callrevu--partial.sandbox.my.site.com/ESWSupportEnhance1739864367682/assets/js/bootstrap.min.js'
-    onload='initEmbeddedMessaging()'>
+    type="text/javascript"
+    src="https://callrevu--partial.sandbox.my.site.com/ESW_Support_Enhance_17418723541891/assets/js/bootstrap.min.js"
+    onload="initEmbeddedMessaging()">
   </script>
 </body>
 </html>
